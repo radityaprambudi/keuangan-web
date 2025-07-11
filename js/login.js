@@ -1,6 +1,6 @@
 function login() {
-    const username = document.querySelector('input[type="text"]').value;
-    const password = document.querySelector('input[type="password"]').value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
     if (username === "admin" && password === "admin") {
         localStorage.setItem("isLoggedIn", "true");

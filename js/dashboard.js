@@ -30,7 +30,7 @@ form.onsubmit = function (e) {
     const keterangan = document.getElementById("keterangan").value;
     const jumlah = document.getElementById("jumlah").value;
 
-    transaksi.push({ jenis, keteranga, jumlah});
+    transaksi.push({ jenis, keterangan, jumlah});
     render();
     form.reset();
 };
