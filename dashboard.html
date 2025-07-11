@@ -7,7 +7,33 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h1>Dashboard keuangan</h1>
-    <p>Selamat Datang! Data keuangan kamu akan ditampilkan disini.</p>
+    <header>
+        <h1>Dashboard Keuangan</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <section id="summary">
+        <h3>Total Saldo: Rp<span id="saldo">0</span></h3>
+    </section>
+
+    <section>
+        <h3>Transaksi</h3>
+        <ul id="daftar-transaksi"></ul>
+    </section>
+
+    <section>
+        <h3>Tambah Transaksi</h3>
+        <form id="form-transaksi">
+            <select id="jenis">
+                <option value="pemasukan">Pemasukan</option>
+                <option value="pengeluaran">Pengeluaran</option>
+            </select>
+            <input type="text" id="keterangan" placeholder="Keterangan">
+            <input type="number" id="jumlah" placeholder="Jumlah">
+            <button type="submit">Simpan</button>
+        </form>
+    </section>
+
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
