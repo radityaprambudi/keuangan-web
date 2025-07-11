@@ -6,6 +6,6 @@ function login() {
         localStorage.setItem("isLoggedIn", "true");
         window.location.href = "dashboard.html";
     } else {
-        alert("Loggin Gagal!");
+        alert("Login Gagal!");
     }
 }
